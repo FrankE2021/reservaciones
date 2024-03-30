@@ -1,0 +1,48 @@
+.linea,.seccion{
+    display: flex;
+}
+.columna1{
+    width: 130px;
+}
+.columna2{
+      flex: 1;      
+}
+.resumen{
+    margin-left: 15px;
+    width: 30%;
+    border-left: 1px dotted grey;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media print{
+    .resumen{
+        border: none;
+        width: 100%;
+        font-size: 2em;
+        display: grid;
+    }
+    .opciones{
+        display: none;
+    }
+    .columna1{
+        width: 280px;
+    }
+    .total{
+        font-size: 1.5em;
+    }
+    .informacion:nth-child(5){
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        grid-row: 2;
+    }
+    .informacion img{
+        width: 50%;
+    }
+}
+
+@media only screen and(min-width:680px){
+    .zonas{
+        width: 24.5%;
+    }
+}
